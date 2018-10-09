@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mappings xmlns="http://dozermapper.github.io/schema/bean-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://dozermapper.github.io/schema/bean-mapping https://dozermapper.github.io/schema/bean-mapping.xsd">
+    <configuration>
+        <wildcard>false</wildcard>
+    </configuration>
+
+    <mapping>
+        <class-a>com.oup.integration.sps.acad.saptitle.cdm.pojo.SAPTitleCDMUS18</class-a>
+        <class-b>com.oup.integration.sps.acad.saptitle.sap.pojo.SAPTitleSAPUS18</class-b>
+        <field>
+            <a>productISBN</a>
+            <b>productISBN</b>
+        </field>
+        <field>
+            <a>productExtent</a>
+            <b>productExtent</b>
+        </field>
+        <field>
+            <a>productTrimPage</a>
+            <b>productTrimPage</b>
+        </field>
+        <field>
+            <a>impressionController</a>
+            <b>impressionController</b>
+        </field>
+        <field>
+            <a>indicator</a>
+            <b>indicator</b>
+        </field>
+        
+         
+         <field>
+            <a>marketingController</a>
+            <b>marketingController</b>
+        </field>
+         
+         <field>
+            <a>productionEditor</a>
+            <b>productionEditor</b>
+        </field>
+         <field>
+            <a>originalIdentificationCode</a>
+            <b>originalIdentificationCode</b>
+        </field>
+         <field>
+            <a>series</a>
+            <b>series</b>
+        </field>
+         <field>
+            <a>responsibleEditor</a>
+            <b>responsibleEditor</b>
+        </field>
+         <field>
+            <a>mediaType</a>
+            <b>mediaType</b>
+        </field>
+         <field>
+            <a>materialPricingGroup</a>
+            <b>materialPricingGroup</b>
+        </field>
+         <field>
+            <a>cycle</a>
+            <b>cycle</b>
+        </field>
+         <field>
+            <a>isTitleNegotiated</a>
+            <b>isTitleNegotiated</b>
+        </field>
+         <field>
+            <a>onlineProduct</a>
+            <b>onlineProduct</b>
+        </field>
+        <field>
+            <a>previoustISBN</a>
+            <b>previoustISBN</b>
+        </field>
+        <field>
+            <a>catalog</a>
+            <b>catalog</b>
+        </field>
+        
+    </mapping>
+</mappings>

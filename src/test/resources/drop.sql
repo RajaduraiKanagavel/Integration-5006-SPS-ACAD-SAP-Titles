@@ -1,0 +1,1 @@
+drop table sap_sequencenumber;

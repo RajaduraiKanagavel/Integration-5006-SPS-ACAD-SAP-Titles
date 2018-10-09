@@ -1,0 +1,54 @@
+spring:
+  application:
+    name: ACAD-SAPTITLE
+  activemq:
+    broker-url: vm://embedded?broker.persistent=false,useShutdownHook=false
+    in-memory: true
+  datasource:
+    url: jdbc:h2:mem:sps;MODE=MySQL;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: root
+    password: root
+    driver-class-name: org.h2.Driver
+      
+server:
+  port: 8080  
+eureka:
+  client:
+    enabled: false
+    
+camel:
+  springboot:
+    main-run-controller: true
+
+activemq:
+    uk:
+      queuename: queue:SPS-ACAD-AC18-SAPTITLE 
+      corntab:
+        starttime: 0 0,5,10,15,20,25,30,35,40,45,50,55 * * * ? *
+        stoptime: 0 4,9,14,19,24,29,34,39,44,49,54,59 * * * ? *
+    us:
+      queuename: queue:SPS-ACAD-US18-SAPTITLE
+      corntab:
+        starttime: 0 0,5,10,15,20,25,30,35,40,45,50,55 * * * ? *
+        stoptime: 0 4,9,14,19,24,29,34,39,44,49,54,59 * * * ? *
+        
+file:
+  backup:
+    location: ${java.io.tmpdir}   
+    
+ftp:
+  uk: 
+    server: localhost
+    port: 9999
+    username: ftpuser
+    password: ftppass
+    drop:
+      location: /acad_abc_dev_uk/Export
+  us: 
+    server: localhost
+    port: 9999
+    username: ftpuser
+    password: ftppass
+    drop:
+      location: /acad_abc_dev_us/Export
+      

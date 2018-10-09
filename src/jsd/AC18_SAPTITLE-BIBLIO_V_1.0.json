@@ -1,0 +1,138 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://oup.com/sps/titles.json",
+    "type": "array",
+    "items": {
+        "$id": "http://oup.com/sps/titles.json/items",
+        "type": "object",
+        "properties": {
+            "productISBN": {
+                "$id": "http://oup.com/sps/titles.json/items/properties/productISBN",
+                "type": "string",
+                "title": "product ISBN",
+                "default": "",
+                "examples": ["9780192766533"]
+            },
+            "binding": {
+                "$id": "http://oup.com/sps/titles.json/items/properties/binding",
+                "type": "string",
+                "title": "binding",
+                "default": "",
+                "examples": ["9780192766533"]
+            },
+            "bindType": {
+                "$id": "http://oup.com/sps/titles.json/items/properties/bindType",
+                "type": "string",
+                "title": "bindingType",
+                "default": "",
+                "examples": ["9780192766533"]
+            },
+            "workTitle": {
+                "$id": "http://oup.com/sps/titles.json/items/properties/workTitle",
+                "type": "string",
+                "title": "workTitle",
+                "default": "",
+                "examples": ["9780192766533"]
+            },
+            "coverPrint": {
+                "$id": "http://oup.com/sps/titles.json/items/properties/coverPrint",
+                "type": "string",
+                "title": "coverPrint",
+                "default": "",
+                "examples": ["9780192766533"]
+            },
+            "productExtent": {
+                "$id": "http://oup.com/sps/titles.json/items/properties/productExtent",
+                "type": "string",
+                "title": "productExtent",
+                "default": "",
+                "examples": ["9780192766533"]
+            },
+            "finish": {
+                "$id": "http://oup.com/sps/titles.json/items/properties/finish",
+                "type": "string",
+                "title": "finish",
+                "default": "",
+                "examples": ["9780192766533"]
+            },
+            "productTrimPage": {
+                "$id": "http://oup.com/sps/titles.json/items/properties/productTrimPage",
+                "type": "integer",
+                "title": "productTrimPage",
+                "default": "",
+                "examples": ["9780192766533"]
+            },
+            "impressionController": {
+                "$id": "http://oup.com/sps/titles.json/items/properties/impressionController",
+                "type": "integer",
+                "title": "impressionController",
+                "default": "",
+                "examples": ["9780192766533"]
+            },
+            "textPrint": {
+                "$id": "http://oup.com/sps/titles.json/items/properties/textPrint",
+                "type": "string",
+                "title": "textPrint",
+                "default": "",
+                "examples": ["9780192766533"]
+            },
+            "textPrintNotes": {
+                "$id": "http://oup.com/sps/titles.json/items/properties/textPrintNotes",
+                "type": "string",
+                "title": "textPrintNotes",
+                "default": "",
+                "examples": ["Black & blue as before"]
+            },
+            "mainTextPP": {
+                "$id": "http://oup.com/sps/titles.json/items/properties/mainTextPP",
+                "type": "integer",
+                "title": "Main Text (pp)",
+                "default": "",
+                "examples": ["1036"]
+            },
+            "platesExist": {
+                "$id": "http://oup.com/sps/titles.json/items/properties/platesExist",
+                "type": "string",
+                "title": "Plates?",
+                "default": "",
+                "examples": ["Y"]
+            },
+            "platePagesCount": {
+                "$id": "http://oup.com/sps/titles.json/items/properties/platePagesCount",
+                "type": "integer",
+                "title": "Number of Plate Pages",
+                "default": "",
+                "examples": ["12"]
+            },
+            "platePagesPosition": {
+                "$id": "http://oup.com/sps/titles.json/items/properties/platePagesPosition",
+                "type": "string",
+                "title": "Position of Plate Pages",
+                "default": "",
+                "examples": ["central"]
+            },
+            "platePagesColour": {
+                "$id": "http://oup.com/sps/titles.json/items/properties/platePagesColour",
+                "type": "string",
+                "title": "Color of Plate Pages",
+                "default": "",
+                "examples": ["mono"]
+            },
+            "bleedsExist": {
+                "$id": "http://oup.com/sps/titles.json/items/properties/bleedsExist",
+                "type": "string",
+                "title": "Bleeds?",
+                "default": "",
+                "examples": ["Y"]
+            },
+            "textPaper": {
+                "$id": "http://oup.com/sps/titles.json/items/properties/textPaper",
+                "type": "string",
+                "title": "Bleeds?",
+                "default": "",
+                "examples": ["80g Soporset Prem White"]
+            }
+        }
+
+    }
+}
