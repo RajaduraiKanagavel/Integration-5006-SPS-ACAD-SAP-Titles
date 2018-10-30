@@ -52,8 +52,8 @@ public class AC18RequestProcessorRoute extends RouteBuilder {
 		.wireTap("file:{{file.backup.location}}/2.0 SentToSAP?fileName=${date:now:yyyy/MM/dd/}$simple{header.DestinationFileName}_$simple{header.RequestReceivedTime}.dat")
 		.choice()
 			.when(header("Region").isEqualTo("UK"))
-			.log(LoggingLevel.INFO, "DEBUG pOINT 2222")
-			.log(LoggingLevel.INFO, "DEBUG pOINT 444 ${header.DestinationFileName} ")
+			
+			
 				.toD("ftp:{{ftp.uk.server}}:{{ftp.uk.port}}{{ftp.uk.drop.location}}?FileName=$simple{header.DestinationFileName}.dat&doneFileName=$simple{header.DestinationFileName}.go&password={{ftp.uk.password}}&username={{ftp.uk.username}}&passiveMode=true")
 			/*.toD("ftp:{{ftp.us.server}}:{{ftp.us.port}}{{ftp.us.drop.location}}?FileName=$simple{header.DestinationFileName}.dat&doneFileName=$simple{header.DestinationFileName}.go&password={{ftp.us.password}}&username={{ftp.us.username}}&passiveMode=true")*/
 			.when(header("Region").isEqualTo("US"))
