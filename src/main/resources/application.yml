@@ -86,7 +86,7 @@ activemq:
         starttime: 0 0,10,20,30,40,50 * * * ? *
         stoptime: 0 9,19,29,39,49,59 * * * ? *
     us:
-      queuename: SPS-ACAD-UK-US18-SAP-TITLES-DEV
+      queuename: SPS-ACAD-US-US18-SAP-TITLES-DEV
       corntab:
         timezone: US/Hawaii
         starttime: 0 0,10,20,30,40,50 * * * ? *
