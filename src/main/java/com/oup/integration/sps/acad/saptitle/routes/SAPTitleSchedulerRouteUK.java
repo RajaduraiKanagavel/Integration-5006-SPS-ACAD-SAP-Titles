@@ -14,8 +14,8 @@ public class SAPTitleSchedulerRouteUK extends RouteBuilder {
 		
 		from("activemq:{{activemq.uk.queuename}}")
 			.routeId("SAPTitleSchedulerRouteUK")
-			.autoStartup(false)
-			.routePolicyRef("startPolicyUK")
+			/*.autoStartup(false)
+			.routePolicyRef("startPolicyUK")*/
 			
 			
 			
