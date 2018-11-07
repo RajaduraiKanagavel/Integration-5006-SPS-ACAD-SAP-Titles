@@ -14,8 +14,8 @@ public class SAPTitleSchedulerRouteUS extends RouteBuilder {
 		
 		from("activemq:{{activemq.us.queuename}}")
 			.routeId("sapTitleSchedulerRouteUS")
-			.autoStartup(false)
-			.routePolicyRef("startPolicyUS")
+			/*.autoStartup(false)
+			.routePolicyRef("startPolicyUS")*/
 			.log(LoggingLevel.INFO, "com.oup.sps", "Adding US First Costs Message--- ${body}")
 			.aggregate(new BiblioAggregationStrategy())
 			.constant(true)
