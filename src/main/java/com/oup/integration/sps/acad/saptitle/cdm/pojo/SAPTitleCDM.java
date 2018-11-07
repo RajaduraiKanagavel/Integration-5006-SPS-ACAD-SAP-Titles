@@ -102,7 +102,7 @@ private String productTrimPage;
 * 
 */
 @JsonProperty("impressionController")
-private Integer impressionController;
+private String impressionController;
 /**
 * textPrint
 * <p>
@@ -361,7 +361,7 @@ this.productTrimPage = productTrimPage;
 * 
 */
 @JsonProperty("impressionController")
-public Integer getImpressionController() {
+public String getImpressionController() {
 return impressionController;
 }
 
@@ -372,7 +372,7 @@ return impressionController;
 * 
 */
 @JsonProperty("impressionController")
-public void setImpressionController(Integer impressionController) {
+public void setImpressionController(String impressionController) {
 this.impressionController = impressionController;
 }
 

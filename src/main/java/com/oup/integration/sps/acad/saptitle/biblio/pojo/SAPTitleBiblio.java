@@ -102,7 +102,7 @@ private Integer productTrimPage;
 * 
 */
 @JsonProperty("impressionController")
-private Integer impressionController;
+private String impressionController;
 /**
 * textPrint
 * <p>
@@ -184,7 +184,7 @@ public SAPTitleBiblio() {
 
 
 public SAPTitleBiblio(String productISBN, String binding, String bindType, String workTitle, String coverPrint,
-		String productExtent, String finish, Integer productTrimPage, Integer impressionController, String textPrint,
+		String productExtent, String finish, Integer productTrimPage, String impressionController, String textPrint,
 		String textPrintNotes, Integer mainTextPP, String platesExist, Integer platePagesCount,
 		String platePagesPosition, String platePagesColour, String bleedsExist, String textPaper
 		) {
@@ -393,7 +393,7 @@ this.productTrimPage = productTrimPage;
 * 
 */
 @JsonProperty("impressionController")
-public Integer getImpressionController() {
+public String getImpressionController() {
 return impressionController;
 }
 
@@ -404,7 +404,7 @@ return impressionController;
 * 
 */
 @JsonProperty("impressionController")
-public void setImpressionController(Integer impressionController) {
+public void setImpressionController(String impressionController) {
 this.impressionController = impressionController;
 }
 

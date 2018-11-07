@@ -103,7 +103,7 @@ public class US18SAPTitleTest {
 
 		List<SAPTitleBiblio> inputList = new ArrayList<>();
 		inputList.add(new SAPTitleBiblio("productISBN", "Hardback", "Comb", "workTitle", "coverPrint", " productExtent",
-				" finish", 1001, 1001, "textPrint", "textPrintNotes", 1001, "abcd", 1001, " platePagesPosition",
+				" finish", 1001, "1001", "textPrint", "textPrintNotes", 1001, "abcd", 1001, " platePagesPosition",
 				" platePagesColour", "bleedsExist", " textPaper"));
 
 		String message = objectMapper.writeValueAsString(inputList);

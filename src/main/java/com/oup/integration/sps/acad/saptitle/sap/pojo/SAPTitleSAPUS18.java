@@ -73,7 +73,7 @@ private Long productTrimPage;
 */
 	@DataField(pos=4)
 @JsonProperty("impressionController")
-private Long impressionController;
+private String impressionController;
 /**
 * indicator
 * <p>
@@ -266,7 +266,7 @@ this.productTrimPage = productTrimPage;
 * 
 */
 @JsonProperty("impressionController")
-public Long getImpressionController() {
+public String getImpressionController() {
 return impressionController;
 }
 
@@ -277,7 +277,7 @@ return impressionController;
 * 
 */
 @JsonProperty("impressionController")
-public void setImpressionController(Long impressionController) {
+public void setImpressionController(String impressionController) {
 this.impressionController = impressionController;
 }
 
