@@ -46,14 +46,14 @@ ftp:
     username: ftpunix
     password: 12Xdirect
     drop:
-      location: /acad_abc_dev/Export
+      location: /acad_abc_qa/Export
   us: 
-    server: GBOXFFTPWIN
+    server: uscarsappdc01.us.oup.com
     port: 21
-    username: ftpunix
-    password: 12Xdirect
+    username: USOUP\us_oxfordpublish
+    password: EWvqG517
     drop:
-      location: /acad_abc_dev/Export
+      location: /R2Q400/ABC/IN
 management:
   security:
     enabled: false
@@ -103,14 +103,14 @@ ftp:
     username: ftpunix
     password: 12Xdirect
     drop:
-      location: /acad_abc_dev/Export
+      location: /acad_abc_qa/Export
   us: 
-    server: GBOXFFTPWIN
+    server: uscarsappdc01.us.oup.com
     port: 21
-    username: ftpunix
-    password: 12Xdirect
+    username: USOUP\us_oxfordpublish
+    password: EWvqG517
     drop:
-      location: /acad_abc_dev/Export
+      location: /R2Q400/ABC/IN
     
 eureka:
   client:
@@ -170,12 +170,12 @@ ftp:
     drop:
       location: /acad_abc_qa/Export
   us: 
-    server: GBOXFFTPWIN
+    server: uscarsappdc01.us.oup.com
     port: 21
-    username: ftpunix
-    password: 12Xdirect
+    username: USOUP\us_oxfordpublish
+    password: EWvqG517
     drop:
-      location: /acad_abc_qa/Export
+      location: /R2Q400/ABC/IN
     
 eureka:
   client:
@@ -236,12 +236,13 @@ ftp:
     drop:
       location: /acad_abc/Export
   us: 
-    server: GBOXFFTPWIN
+    server: uscarsappdc01.us.oup.com
     port: 21
-    username: ftpunix
-    password: 12Xdirect
+    username: USOUP\us_oxfordpublish
+    password: EWvqG517
     drop:
-      location: /acad_abc/Export
+      location: /R2P400/ABC/IN
+      
 management:
   security:
     enabled: false
